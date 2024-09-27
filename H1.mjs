@@ -53,4 +53,3 @@ if(getal1 < getal2 && getal1 < getal3 && getal1 < getal4 && getal1 < getal5)
     }
 
 console.log("Het gemiddelde is: " + gemiddelde);
-

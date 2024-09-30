@@ -10,18 +10,18 @@ let maand = await userInput.question("Geef een maand: ");
 switch(maand)
 {
     case "januari":
-        console.log("In het jaar " + jaartal + " heeft " + maand + " heeft 30 dagen");
+        console.log("In het jaar " + jaartal + " heeft " + maand + " heeft 31 dagen");
     break;
 
     case "februari":
-        if((jaartal % 2 == 0 && jaartal % 100 !== 0) || (jaartal % 400 == 0))
-        {
-            console.log("In het jaar " + jaartal + " heeft " + maand + " 29 dagen");
-        }
-        else
-        {
-            console.log("In het jaar " + jaartal + " heeft " + maand + " 28 dagen");
-        }
+        if((jaartal % 4 == 0 && jaartal % 100 !== 0) || (jaartal % 400 == 0))
+            {
+                console.log("Schrikkeljaar, in het jaar " +jaartal + " heeft " + maand +" 29 dagen")
+            }
+            else
+            {
+                console.log("Schrikkeljaar, in het jaar " +jaartal + " heeft " + maand +" 28 dagen")
+            }
     break;
 
     case "maart":    
